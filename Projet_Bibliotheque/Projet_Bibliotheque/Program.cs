@@ -11,13 +11,9 @@ namespace Projet_Bibliotheque
         static void Main(string[] args)
         {
 
-            //test lol
             Console.WriteLine("test lol");
             Console.ReadLine();
-            //kokkokokokkokookokkokokokokokkokokokoko
-            //test2 fabien
-
-            //ujnunjkinjknjn
+            
       
         }
     }
