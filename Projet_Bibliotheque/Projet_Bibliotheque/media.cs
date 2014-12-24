@@ -6,14 +6,29 @@ using System.Threading.Tasks;
 
 namespace Projet_Bibliotheque
 {
-    class media
+    class Media
     {
         /// <Propriété>
-        public int Identifiant { get; set; }
-        public int NbStock { get; set; }
-        public string Titre { get; set; }
+        public int _identifiant { get; set; }
+        public int _nbStock { get; set; }
+        public string _titre { get; set; }
         /// <Méthode>
         public void AjoutLivre(string titre);
         public void AjoutCD(string titre);
+
+
+        /// <Function>
+        
+        bool Emprunt(int identifiant)
+        {
+
+            return true;  // pour l'instant vide juste pour que sa compile
+        }
+
+        bool Supprimmer(int identifiant)
+        {
+
+            return true; // pour l'instant vide juste pour que sa compile
+        }
     }
 }
