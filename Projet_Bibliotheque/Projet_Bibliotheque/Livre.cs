@@ -9,8 +9,8 @@ namespace Projet_Bibliotheque
     class Livre : Media
     {
         /// <Propriété>
-        private List<string> _typeGenre = new List<string> { "Action", "Aventure", "ScienceFiction", "Fantastique", "Roman", "Policier", "Horreur", "Drame", "BD", "Poeme", "Historique", "Biographie", "Conte", "Fiction" };
-        private List<string> _auteur = new List<string>();
+        private string _typeGenre ;
+        private string _auteur;
         
         public string _nb_ISBN { get; set; }
         
@@ -18,15 +18,15 @@ namespace Projet_Bibliotheque
         /// <Constructeur par defaut>
         Livre()
         {
-            _auteur.Add("Inconnu");
+            _auteur = "Inconnu";
             _nb_ISBN = "";
-            _typeGenre.Add("Inconnu");
+            _typeGenre = "Inconnu";
         }
 
         Livre(string unAuteur, string unGenre, string unNbISBN)
         {
-            _auteur.Add(unAuteur);
-            _typeGenre.Add(unGenre);
+            _auteur = unAuteur;
+            _typeGenre = unGenre;
             _nb_ISBN = unNbISBN; // C'est juste un string à ne pas s'occuper par la suite et non un int
         }
 

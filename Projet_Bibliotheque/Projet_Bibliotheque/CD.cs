@@ -9,20 +9,20 @@ namespace Projet_Bibliotheque
     class CD: Media
     {
         /// <Propriété>
-        protected List<string> _artiste = new List<string>();
-        protected List<string> _styleMusic = new List<string> { "Rock", "Classique", "Blues", "Pop", "Jazz", "Variété", "Folk", "Reggae", "PopRock", "Electro", "Techno", "Rap", "Country", "Soul", "MusicFilm", "Enfant" };
+        protected string _artiste;
+        protected string _styleMusic ;
 
         /// <Construteur par defaut>
         CD()
         {
-            _artiste.Add("Inconnu");
-            _styleMusic.Add("Inconnu");
+            _artiste = "Inconnu";
+            _styleMusic = "Inconnu";
         }
 
         CD(string artiste, string styleMusic)
         {
-            _artiste.Add(artiste);
-            _styleMusic.Add(styleMusic);
+            _artiste = artiste;
+            _styleMusic = styleMusic;
         }
 
     }
